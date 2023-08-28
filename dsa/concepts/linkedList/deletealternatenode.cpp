@@ -139,9 +139,9 @@
     Node* new_head = reversekLL(currptr,k); //recursive call
     head->next = new_head;
  }
-
+ 
  return prevptr; //prevptr will give the new_head of connected linkedlist
-
+ }
   int main(){
 
       LinkedList ll;
@@ -154,7 +154,7 @@
      // ll.display();
      // deleteDuplicateNodes(ll.head);
       ll.display();
-      ll.head = reverseLL(ll.head, 2);
+      ll.head = reversekLL(ll.head, 2);
       ll.display();
 
     return 0;
